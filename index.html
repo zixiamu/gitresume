@@ -42,7 +42,8 @@
         background: rgb(64, 64, 65);
         width: 100%;
         text-align: center;
-        padding: 60px 0 20px 0;
+        padding-top: 60px;
+        padding-bottom: 20px;
     }
 
     header>h1 {
@@ -54,32 +55,42 @@
         font-size: 18px;
     }
 
+    header .link a {
+        padding: 5px;
+        text-decoration: none;
+        color: #888;
+    }
+
+    header .link a:hover {
+        color: #fff;
+    }
+
     /* aside */
     aside {
         background: #FFF;
         width: 280px;
-        border-right: 2px solid #eee;
+        border-right: 2px solid #ccc;
         position: relative;
         padding-top: 100px
     }
 
     aside .avader {
+        text-align: center;
         position: absolute;
-        top: -90px;
-        left: 50px;
+        top: -100px;
         width: 100%;
     }
 
     aside .avader>img {
-        width: 180px;
-        height: 180px;
+        width: 200px;
+        height: 200px;
         border-radius: 50%;
         background: cornflowerblue;
     }
 
-    aside section {
+    aside section,main section {
         margin: 30px 20px 0px 40px;
-        border-bottom: 2px solid #eee;
+        border-bottom: 2px solid #ccc;
         padding-bottom: 30px;
     }
 
@@ -150,23 +161,35 @@
         height: calc(100vh - 172px);
     }
 
-    main section {
-        margin: 30px 20px 0px 30px;
-        border-bottom: 2px solid #eee;
-        padding-bottom: 20px;
-    }
-
     main section p {
         padding-bottom: 5px;
     }
 
     @media(max-width:425px) {
         header {
-            height: 168px;
+            padding-top: 40px;
+            padding-bottom: 125px;
         }
 
         aside {
             width: 100%;
+        }
+
+        aside section, main section {
+            margin: 20px;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 15px;
+        }
+
+        aside .avader {
+            padding-top: 5px;
+        }
+
+        aside .avader>img {
+            width: 180px;
+            height: 180px;
+            border-radius: 50%;
+            background: cornflowerblue;
         }
     }
 </style>
@@ -176,7 +199,11 @@
         <div class="layout">
             <header>
                 <h1>周元达</h1>
-                <p> Web前端开发</p>
+                <p>应聘 Web 前端开发</p>
+                <div class="link">
+                    <a href="https://github.com/Adashuai5">github</a>
+                    <a href="https://www.zhihu.com/people/leng-yue-gu-zhao/posts">我的博客</a>
+                </div>
             </header>
             <aside>
                 <div class="avader">
@@ -254,7 +281,7 @@
                 <section>
                     <h2>关于我</h2>
                     <p>熟练 HTML、DIV+CSS 的页面布局，能根据设计图完成页面制作</p>
-                    <p>熟悉 HTML5、CSS3 新增功能，了解 Canvas动画制作</p>
+                    <p>熟悉 HTML5、CSS3 新增功能，了解 Canvas 动画制作</p>
                     <p>熟悉掌握原生 JavaScript，熟悉 ES6 常用规范，熟悉 jQuery</p>
                     <p>熟悉 Vue.js 技术栈及 Vue全家桶，了解 React</p>
                     <p>熟悉模块化、工程化开发流程，能够配置 webpack</p>
