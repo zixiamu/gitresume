@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>周元达简历—面试前端开发-2018</title>
+    <title>周元达—面试前端开发-2018</title>
     <script src="//at.alicdn.com/t/font_963522_7m4xzam32f4.js"></script>
 </head>
 <style>
@@ -44,6 +44,13 @@
         text-align: center;
         padding-top: 60px;
         padding-bottom: 20px;
+        position: relative;
+    }
+
+    header .resume-link {
+        position: absolute;
+        left: 10px;
+        top: 10px;
     }
 
     header>h1 {
@@ -55,13 +62,13 @@
         font-size: 18px;
     }
 
-    header .link a {
+    header a {
         padding: 5px;
         text-decoration: none;
         color: #888;
     }
 
-    header .link a:hover {
+    header a:hover {
         color: #fff;
     }
 
@@ -155,9 +162,14 @@
         min-height: calc(100vh - 172px);
     }
 
-    main section {
+    main section:not(:last-of-type) {
         margin: 30px 20px 0px 40px;
         border-bottom: 1.5px solid #ccc;
+        padding-bottom: 20px;
+    }
+
+    main section:last-of-type {
+        margin: 30px 20px 0px 40px;
         padding-bottom: 20px;
     }
 
@@ -165,30 +177,41 @@
         padding-bottom: 5px;
     }
 
-    main section .item{
+    main section .item {
         padding-bottom: 20px;
     }
 
     main section .item h3 {
         color: #333;
-        font-size: 16px
+        font-size: 16px;
     }
 
     main section .item ul {
-        padding: 20px 0 0 30px
+        padding: 20px 0 0 30px;
     }
 
-    main section .item a {
+    footer {
+        background: #efefef;
+        text-align: center;
+        width: 100%;
+    }
+
+    a {
         padding: 5px;
         text-decoration: none;
         color: #888;
     }
 
-    main section .item a:hover {
+    a:hover {
         color: #333;
     }
 
     @media(max-width:425px) {
+        main section .item ul {
+            padding-left: 10px;
+            list-style: none;
+        }
+
         header {
             padding-top: 40px;
             padding-bottom: 125px;
@@ -198,10 +221,20 @@
             width: 100%;
         }
 
-        aside section,
-        main section {
+        aside section {
             margin: 20px;
             border-bottom: 1px solid #ccc;
+            padding-bottom: 15px;
+        }
+
+        main section:not(:last-of-type) {
+            margin: 20px;
+            border-bottom: 1px solid #ccc;
+            padding-bottom: 15px;
+        }
+
+        main section:last-of-type {
+            margin: 20px;
             padding-bottom: 15px;
         }
 
@@ -219,138 +252,153 @@
 </style>
 
 <body>
-    <div id="page">
-        <div class="layout">
-            <header>
-                <h1>周元达</h1>
-                <p>应聘 Web 前端开发</p>
-                <div class="link">
-                    <a href="https://github.com/Adashuai5">github</a>
-                    <a href="https://www.zhihu.com/people/leng-yue-gu-zhao/posts">我的博客</a>
-                </div>
-            </header>
-            <aside>
-                <div class="avader">
-                    <img src="./avader.PNG" alt="头像">
-                </div>
-                <section>
-                    <div class="personal">
-                        <h2>基本信息</h2>
-                        <div class="item">
-                            <span>学历</span>
-                            <span>本科</span>
-                        </div>
-                        <div class="item">
-                            <span>毕业时间</span>
-                            <span>2018.7</span>
-                        </div>
-                        <div class="item">
-                            <span>年龄</span>
-                            <span>23</span>
-                        </div>
-                    </div>
-                </section>
-                <section>
-                    <div class="skills">
-                        <h2>相关技能</h2>
-                        <div class="item">
-                            <p class="keyword">JavaScript/ HTML5/ CSS3/ Svg</p>
-                            <p class="rule"><i style="width: 75%"></i></p>
-                        </div>
-                        <div class="item">
-                            <p class="keyword">Vue.js/ Vuex/ Vue-router/ Axios</p>
-                            <p class="rule"><i style="width: 68%"></i></p>
-                        </div>
-                        <div class="item">
-                            <p class="keyword">Node.js</p>
-                            <p class="rule"><i style="width: 45%"></i></p>
-                        </div>
-                        <div class="item">
-                            <p class="keyword">Webpack/ Parcel/ Npm Script</p>
-                            <p class="rule"><i style="width: 70%"></i></p>
-                        </div>
-                        <div class="item">
-                            <p class="keyword">ES6/ Sass、Less/ Babel</p>
-                            <p class="rule"><i style="width: 73%"></i></p>
-                        </div>
-                    </div>
-                </section>
-                <section>
-                    <div class="contact">
-                        <h2>联系方式</h2>
-                        <div class="item">
-                            <svg class="icon" aria-hidden="true">
-                                <use xlink:href="#icon-phone"></use>
-                            </svg>
-                            <span>15757303465</span>
-                        </div>
-                        <div class="item">
-                            <svg class="icon" aria-hidden="true" style="fill:red;">
-                                <use xlink:href="#icon-wechat"></use>
-                            </svg>
-                            <span>873606339</span>
-                        </div>
-                        <div class="item">
-                            <svg class="icon" aria-hidden="true">
-                                <use xlink:href="#icon-mail"></use>
-                            </svg>
-                            <span>ad873606339@gmail.com</span>
-                        </div>
-                        <div class="item">
-                            <svg class="icon" aria-hidden="true">
-                                <use xlink:href="#icon-location"></use>
-                            </svg>
-                            <span>宁波</span>
-                        </div>
-                    </div>
-                </section>
-            </aside>
-            <main>
-                <section>
-                    <h2>关于我</h2>
-                    <p>熟练 HTML、DIV+CSS 的页面布局，能根据设计图完成页面制作</p>
-                    <p>熟悉 HTML5、CSS3 新增功能，了解 Canvas 动画制作</p>
-                    <p>熟悉掌握原生 JavaScript，熟悉 ES6 常用规范，熟悉 jQuery</p>
-                    <p>熟悉 Vue.js 技术栈及 Vue全家桶，了解 React</p>
-                    <p>熟悉模块化、工程化开发流程，能够配置 webpack</p>
-                    <p>有小程序、移动端开发经验</p>
-                    <p>了解 Node.js ,能够开发简单的后台数据库</p>
-                    <p>熟练使用VsCode、WebStorm、Sass、Git 等开发工具</p>
-                </section>
-                <section>
-                    <h2>项目经历</h2>
+    <div id="page" class="layout">
+        <header>
+            <div class="resume-link">
+                <a href="https://adashuai5.github.io/resume/">简历在线版</a>
+            </div>
+            <h1>周元达</h1>
+            <p>应聘 Web 前端开发</p>
+            <div class="link">
+                <a href="https://github.com/Adashuai5">github</a>
+                <a href="https://www.zhihu.com/people/leng-yue-gu-zhao/posts">我的博客</a>
+            </div>
+        </header>
+        <aside>
+            <div class="avader">
+                <img src="./avader.PNG" alt="头像">
+            </div>
+            <section>
+                <div class="personal">
+                    <h2>基本信息</h2>
                     <div class="item">
-                        <h3>开源项目：简易 Vue UI 组件库</h3>
-                        <ul>
-                            <li>
-                                <strong>项目介绍：</strong>该项目是我学习Vue过程中，尝试参照各大知名UI库，仿照其做的几个简单的UI组件。每个组件均经历从需求分析到单元测试，并实现持续集成，最终自成文档，发布于 npm。完成该项目使我对 Vue 的常用特征更加熟悉，同时提升了自己对前端工程化流程以及单元测试重要性的深刻理解，并且让我离开源文化更进了一步。
-                            </li>
-                            <li><strong>技术栈：</strong>Vue.js/ Vuepress/ ES6</li>
-                            <li><strong>项目源码：</strong><a href="https://github.com/Adashuai5/wheels-ada">github.com/Adashuai5/wheels-ada</a></li>
-                            <li><strong>浏览链接：</strong><a href="https://adashuai5.github.io/wheels-ada">adashuai5.github.io/wheels-ada</a></li>
-                        </ul>
+                        <span>学历</span>
+                        <span>本科</span>
                     </div>
                     <div class="item">
-                        <h3>Vue技术栈实现共享博客平台</h3>
-                        <ul>
-                            <li>
-                                <strong>项目介绍：</strong>该项目是我初学 Vue 时，根据教程自主开发的一个前端项目，其可作为博客分享网站。项目使用 Vue.js 技术栈，包含首页、用户文章列表、登录、注册、个人管理、编辑、发布等功能。通过该项目的学习，深入理解框架的作用，对vue全家桶，前后端交互等有了真实的体验，能够实现简单的单页面应用。
-                            </li>
-                            <li><strong>技术栈：</strong>Vue-cli/vue2/axios/vue-router/vuex/es6/npm</li>
-                            <li><strong>项目源码：</strong><a href="https://github.com/Adashuai5/Vue-Blog">github.com/Adashuai5/Vue-Blog</a></li>
-                            <li><strong>浏览链接：</strong><a href="https://adashuai5.github.io/Vue-Blog">adashuai5.github.io/Vue-Blog</a></li>
-                        </ul>
+                        <span>毕业时间</span>
+                        <span>2018.7</span>
                     </div>
-                </section>
-                <section>
-                    <h2>自我评价</h2>
-                    <p>对前端技术具有浓厚兴趣，有良好的文档编写和代码书写规范，有良好的沟通能力和团队合作能力，性格随和，认真负责，自学能力强，拥抱开源文化。</p>
-                </section>
-            </main>
-        </div>
+                    <div class="item">
+                        <span>年龄</span>
+                        <span>23</span>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <div class="skills">
+                    <h2>相关技能</h2>
+                    <div class="item">
+                        <p class="keyword">JavaScript/ HTML5/ CSS3/ Svg</p>
+                        <p class="rule"><i style="width: 75%"></i></p>
+                    </div>
+                    <div class="item">
+                        <p class="keyword">Vue.js/ Vuex/ Vue-router/ Axios</p>
+                        <p class="rule"><i style="width: 65%"></i></p>
+                    </div>
+                    <div class="item">
+                        <p class="keyword">Node.js</p>
+                        <p class="rule"><i style="width: 45%"></i></p>
+                    </div>
+                    <div class="item">
+                        <p class="keyword">Webpack/ Parcel/ Npm Script</p>
+                        <p class="rule"><i style="width: 70%"></i></p>
+                    </div>
+                    <div class="item">
+                        <p class="keyword">ES6/ Sass、Less/ Babel</p>
+                        <p class="rule"><i style="width: 73%"></i></p>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <div class="contact">
+                    <h2>联系方式</h2>
+                    <div class="item">
+                        <svg class="icon" aria-hidden="true">
+                            <use xlink:href="#icon-phone"></use>
+                        </svg>
+                        <span>15757303465</span>
+                    </div>
+                    <div class="item">
+                        <svg class="icon" aria-hidden="true" style="fill:red;">
+                            <use xlink:href="#icon-wechat"></use>
+                        </svg>
+                        <span>873606339</span>
+                    </div>
+                    <div class="item">
+                        <svg class="icon" aria-hidden="true">
+                            <use xlink:href="#icon-mail"></use>
+                        </svg>
+                        <span>ad873606339@gmail.com</span>
+                    </div>
+                    <div class="item">
+                        <svg class="icon" aria-hidden="true">
+                            <use xlink:href="#icon-location"></use>
+                        </svg>
+                        <span>宁波</span>
+                    </div>
+                </div>
+            </section>
+        </aside>
+        <main>
+            <section>
+                <h2>关于我</h2>
+                <p>熟练 HTML、DIV+CSS 的页面布局，能根据设计图完成页面制作</p>
+                <p>熟悉 HTML5、CSS3 新增功能，了解 Canvas 动画制作</p>
+                <p>熟悉掌握原生 JavaScript，熟悉 ES6 常用规范，熟悉 jQuery</p>
+                <p>熟悉 Vue.js 技术栈及 Vue全家桶，了解 React</p>
+                <p>熟悉模块化、工程化开发流程，能够配置 webpack</p>
+                <p>有小程序、移动端开发经验</p>
+                <p>了解 Node.js ,能够开发简单的后台数据库</p>
+                <p>熟练使用VsCode、WebStorm、Sass、Git 等开发工具</p>
+            </section>
+            <section>
+                <h2>项目经历</h2>
+                <div class="item">
+                    <h3>开源项目：简易 Vue UI 组件库</h3>
+                    <ul>
+                        <li>
+                            <strong>项目介绍：</strong>该项目是我学习Vue过程中，尝试参照各大知名UI库，仿照其做的几个简单的UI组件。每个组件均经历从需求分析到单元测试，并实现持续集成，最终自成文档，发布于
+                            npm。完成该项目使我对 Vue 的常用特征更加熟悉，同时提升了自己对前端工程化流程以及单元测试重要性的深刻理解，并且让我离开源文化更进了一步。
+                        </li>
+                        <li><strong>技术栈：</strong>Vue.js/ Vuepress/ ES6</li>
+                        <li><strong>项目源码：</strong><a href="https://github.com/Adashuai5/wheels-ada">github.com/Adashuai5/wheels-ada</a></li>
+                        <li><strong>浏览链接：</strong><a href="https://adashuai5.github.io/wheels-ada">adashuai5.github.io/wheels-ada</a></li>
+                    </ul>
+                </div>
+                <div class="item">
+                    <h3>Vue技术栈实现共享博客平台</h3>
+                    <ul>
+                        <li>
+                            <strong>项目介绍：</strong>该项目是我初学 Vue 时，根据教程自主开发的一个前端项目，其可作为博客分享网站。项目使用 Vue.js
+                            技术栈，包含首页、用户文章列表、登录、注册、个人管理、编辑、发布等功能。通过该项目的学习，深入理解框架的作用，对vue全家桶，前后端交互等有了真实的体验，能够实现简单的单页面应用。
+                        </li>
+                        <li><strong>技术栈：</strong>Vue-cli/vue2/axios/vue-router/vuex/es6/npm</li>
+                        <li><strong>项目源码：</strong><a href="https://github.com/Adashuai5/Vue-Blog">github.com/Adashuai5/Vue-Blog</a></li>
+                        <li><strong>浏览链接：</strong><a href="https://adashuai5.github.io/Vue-Blog">adashuai5.github.io/Vue-Blog</a></li>
+                    </ul>
+                </div>
+                <div class="item">
+                    <h3>简易在线画板</h3>
+                    <ul>
+                        <li>
+                            <strong>项目介绍：</strong>是一个使用纯原生JS开发的，主要利用 HTML5 的 Canvas API，是我在学习原生JS及 Canvas 过程中开发的小工具。
+                            其提供在PC及手机端在线画画等功能，并支持画作下载。
+                        </li>
+                        <li><strong>项目源码：</strong><a href="https://github.com/Adashuai5/Canvas-ada">github.com/Adashuai5/Canvas-ada</a></li>
+                        <li><strong>浏览链接：</strong><a href="https://adashuai5.github.io/Canvas-ada">adashuai5.github.io/Canvas-ada</a></li>
+                    </ul>
+                </div>
+            </section>
+            <section>
+                <h2>自我评价</h2>
+                <p>对前端技术具有浓厚兴趣，有良好的文档编写和代码书写规范，有良好的沟通能力和团队合作能力，性格随和，认真负责，自学能力强，拥抱开源文化。</p>
+            </section>
+        </main>
+        <footer>
+            <a href="http://www.freepik.com">Designed by M.salama / Freepik</a>
+        </footer>
     </div>
-
 </body>
 
 </html>
-<!-- <a href="http://www.freepik.com">Designed by M.salama / Freepik</a> -->
