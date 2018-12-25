@@ -51,6 +51,7 @@
         position: absolute;
         left: 10px;
         top: 10px;
+        display: none;
     }
 
     header>h1 {
@@ -248,6 +249,12 @@
             height: 180px;
             border-radius: 50%;
             background: cornflowerblue;
+        }
+    }
+
+    @media print{
+        header .resume-link{
+            display: block;
         }
     }
 </style>
