@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>周元达—面试前端开发-2018</title>
-    <script src="//at.alicdn.com/t/font_963522_7m4xzam32f4.js"></script>
 </head>
 <style>
     .icon {
@@ -26,7 +25,7 @@
     body {
         font: 14px/1.5 Arial;
         color: #666;
-        background: #efefef;
+        background: rgb(195, 188, 178);
     }
 
     .layout {
@@ -252,8 +251,8 @@
         }
     }
 
-    @media print{
-        header .resume-link{
+    @media print {
+        header .resume-link {
             display: block;
         }
     }
@@ -347,18 +346,23 @@
                     </div>
                 </div>
             </section>
+            <section>
+                <h2>个人经历</h2>
+                <p>2018年7月毕业于嘉兴学院，在校期间成绩优异，曾多次获奖学金。毕业后就职宁波酶赛生物工程有限公司，从事本科时就读的生物工程专业相关工作。工作期间接触了前端，发现自己热爱技术，迄今为止利用所有业余时间自学前端八个月，热爱 coding，享受调试代码及解决 bug 的过程，享受通过各种代码组合实现自己成果的过程。有良好的代码规范，热衷分享，崇尚开源文化。</p>
+            </section>
         </aside>
         <main>
             <section>
                 <h2>关于我</h2>
                 <p>熟练 HTML、DIV+CSS 的页面布局，能根据设计图完成页面制作</p>
-                <p>熟悉 HTML5、CSS3 新增功能，了解 Canvas 动画制作</p>
-                <p>熟悉掌握原生 JavaScript，熟悉 ES6 常用规范，熟悉 jQuery</p>
-                <p>熟悉 Vue.js 技术栈及 Vue全家桶，了解 React</p>
+                <p>熟悉 HTML5 及语义化，了解 Canvas 动画制作，掌握 CSS 3 动画、过渡效果等常用技术</p>
+                <p>熟悉原生 JavaScript，了解 ES6 常用规范，了解 jQuery 常用 API</p>
+                <p>熟悉 Vue 常用功能，如组件、虚拟 dom、双向绑定等，能够使用 Vue 全家桶开发项目，对 React 有一定了解</p>
                 <p>熟悉模块化、工程化开发流程，能够配置 webpack</p>
-                <p>有小程序、移动端开发经验</p>
-                <p>了解 Node.js ,能够开发简单的后台数据库</p>
-                <p>熟练使用VsCode、WebStorm、Sass、Git 等开发工具</p>
+                <p>有移动端开发经验，会使用 REM、vw/vh、响应式等技术制作适配手机设备的页面</p>
+                <p>了解 HTTP 相关知识，了解常见的 web 性能优化方案</p>
+                <p>了解 Node.js，能够开发简单的后台服务器</p>
+                <p>熟练使用 VsCode、WebStorm、Sass、Git 等开发工具</p>
             </section>
             <section>
                 <h2>项目经历</h2>
@@ -366,34 +370,59 @@
                     <h3>开源项目：简易 Vue UI 组件库</h3>
                     <ul>
                         <li>
-                            <strong>项目介绍：</strong>该项目是我学习Vue过程中，尝试参照各大知名UI库，仿照其做的几个简单的UI组件。每个组件均经历从需求分析到单元测试，并实现持续集成，最终自成文档，发布于
+                            <strong>项目介绍：</strong>该项目是我学习 Vue 过程中，参照各大知名 UI 库，仿照其做的几个简单的 UI
+                            组件。每个组件均经历从需求分析到单元测试，并实现持续集成，最终自成文档，发布于
                             npm。完成该项目使我对 Vue 的常用特征更加熟悉，同时提升了自己对前端工程化流程以及单元测试重要性的深刻理解，近一步开源文化。
                         </li>
                         <li><strong>技术栈：</strong>Vue.js/ Vuepress/ ES6</li>
-                        <li><strong>项目源码：</strong><a href="https://github.com/Adashuai5/wheels-ada">github.com/Adashuai5/wheels-ada</a></li>
-                        <li><strong>浏览链接：</strong><a href="https://adashuai5.github.io/wheels-ada">adashuai5.github.io/wheels-ada</a></li>
+                        <li><strong>项目源码：</strong><a href="https://github.com/Adashuai5/wheels-ada/">github.com/Adashuai5/wheels-ada</a></li>
+                        <li><strong>浏览链接：</strong><a href="https://adashuai5.github.io/wheels-ada/">adashuai5.github.io/wheels-ada</a></li>
                     </ul>
                 </div>
                 <div class="item">
-                    <h3>Vue技术栈实现共享博客平台</h3>
+                    <h3>共享博客平台</h3>
                     <ul>
                         <li>
-                            <strong>项目介绍：</strong>该项目是我初学 Vue 时，根据教程自主开发的一个前端项目，其可作为博客分享网站。项目使用 Vue.js
-                            技术栈，包含首页、用户文章列表、登录、注册、个人管理、编辑、发布等功能。通过该项目的学习，深入理解框架的作用，对vue全家桶，前后端交互等有了真实的体验，能够实现简单的单页面应用。
+                            <strong>项目介绍：</strong>该项目使用 Vue 实现了一个在线博客分享的平台。项目包含首页、用户文章列表、登录、注册、个人管理、编辑、发布等页面及功能。使用 Grid
+                            作页面布局，使用 vue-cli 创建项目模版，使用 Less 为 CSS 预处理。通过 vue-router 实现路由跳转，通过 vuex 实现状态管理。
                         </li>
-                        <li><strong>技术栈：</strong>Vue-cli/vue2/axios/vue-router/vuex/es6/npm</li>
-                        <li><strong>项目源码：</strong><a href="https://github.com/Adashuai5/Vue-Blog">github.com/Adashuai5/Vue-Blog</a></li>
-                        <li><strong>浏览链接：</strong><a href="https://adashuai5.github.io/Vue-Blog">adashuai5.github.io/Vue-Blog</a></li>
+                        <li><strong>技术栈：</strong>vue-cli/ vue2/ axios/ vue-router/ vuex/ ES6/ npm/ Grid/ Less</li>
+                        <li><strong>项目源码：</strong><a href="https://github.com/Adashuai5/Vue-Blog/">github.com/Adashuai5/Vue-Blog</a></li>
+                        <li><strong>浏览链接：</strong><a href="https://adashuai5.github.io/Vue-Blog/">adashuai5.github.io/Vue-Blog</a></li>
+                    </ul>
+                </div>
+                <div class="item">
+                    <h3>Cnode 社区</h3>
+                    <ul>
+                        <li>
+                            <strong>项目介绍：</strong>该项目使用 Vue 重构 Cnode 官方社区，项目利用 cnode 官方社区提供 API，使用 axios 获取数据，使用
+                            vue-router 进行前端路由的切换及传参，使用 watch 监听路由的变化，webpack 打包。
+                        </li>
+                        <li><strong>技术栈：</strong>vue-cli/vue2/vue-router/axios/es6/npm/webpack</li>
+
+                        <li><strong>项目源码：</strong><a href="https://github.com/Adashuai5/cnode-ada/">github.com/Adashuai5/cnode-ada</a></li>
+                        <li><strong>浏览链接：</strong><a href="https://adashuai5.github.io/cnode-ada/">adashuai5.github.io/cnode-ada</a></li>
                     </ul>
                 </div>
                 <div class="item">
                     <h3>小程序：遍历翻译</h3>
                     <ul>
                         <li>
-                            <strong>项目介绍：</strong>一款提供翻译功能的微信小程序，遍历有浏览所有翻译历史之意。该项目以百度翻译API为服务器域名提供api支持，主要包含翻译首页、语言列表页和翻译历史页。项目逻辑简单，页面清新，提供了近20种语言选择，欢迎尝试。
+                            <strong>项目介绍：</strong>一款提供翻译功能的微信小程序，遍历有浏览所有翻译历史之意。该项目以百度翻译 API 为服务器域名提供 api 支持，主要包含翻译首页、语言列表页和翻译历史页。项目逻辑简单，页面清新，提供了近20种语言选择，欢迎尝试。
                         </li>
-                        <li><strong>项目源码：</strong><a href="https://github.com/Adashuai5/mini-programs">github.com/Adashuai5/mini-programs</a></li>
+                        <li><strong>项目源码：</strong><a href="https://github.com/Adashuai5/mini-programs/">github.com/Adashuai5/mini-programs</a></li>
                         <li><strong>项目浏览：</strong>微信搜索小程序：遍历翻译</li>
+                    </ul>
+                </div>
+                <div class="item">
+                    <h3>可爱皮卡丘</h3>
+                    <ul>
+                        <li>
+                            <strong>项目介绍：</strong>是一个使用纯原生JS开发的，主要利用 HTML5 的 Canvas API，是我在学习原生JS及 Canvas 过程中开发的小工具。
+                            其提供在 PC 及手机端在线画画等功能，并支持画作下载。
+                        </li>
+                        <li><strong>项目源码：</strong><a href="https://github.com/Adashuai5/Pikachu/">github.com/Adashuai5/Pikachu</a></li>
+                        <li><strong>浏览链接：</strong><a href="https://adashuai5.github.io/Pikachu/">adashuai5.github.io/Pikachu</a></li>
                     </ul>
                 </div>
                 <div class="item">
@@ -401,22 +430,20 @@
                     <ul>
                         <li>
                             <strong>项目介绍：</strong>是一个使用纯原生JS开发的，主要利用 HTML5 的 Canvas API，是我在学习原生JS及 Canvas 过程中开发的小工具。
-                            其提供在PC及手机端在线画画等功能，并支持画作下载。
+                            其提供在 PC 及手机端在线画画等功能，并支持画作下载。
                         </li>
-                        <li><strong>项目源码：</strong><a href="https://github.com/Adashuai5/Canvas-ada">github.com/Adashuai5/Canvas-ada</a></li>
-                        <li><strong>浏览链接：</strong><a href="https://adashuai5.github.io/Canvas-ada">adashuai5.github.io/Canvas-ada</a></li>
+                        <li><strong>项目源码：</strong><a href="https://github.com/Adashuai5/Canvas-ada/">github.com/Adashuai5/Canvas-ada</a></li>
+                        <li><strong>浏览链接：</strong><a href="https://adashuai5.github.io/Canvas-ada/">adashuai5.github.io/Canvas-ada</a></li>
                     </ul>
                 </div>
             </section>
-            <section>
-                <h2>自我评价</h2>
-                <p>对前端技术具有浓厚兴趣，有良好的文档编写和代码书写规范，有良好的沟通能力和团队合作能力，性格随和，认真负责，自学能力强，拥抱开源文化。</p>
-            </section>
+            
         </main>
         <footer>
             <a href="http://www.freepik.com">Designed by M.salama / Freepik</a>
         </footer>
     </div>
+    <script src="//at.alicdn.com/t/font_963522_7m4xzam32f4.js"></script>
 </body>
 
 </html>
