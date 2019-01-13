@@ -56,13 +56,14 @@ header>h1 {
 
 header>p {
     color: #999;
-    font-size: 18px;
+    font-size: 20px;
 }
 
 header a {
     padding: 5px;
     text-decoration: none;
     color: #888;
+    font-size: 16px;
 }
 
 header a:hover {
@@ -104,7 +105,7 @@ aside section:not(:last-of-type) {
 
 section h2 {
     padding-bottom: 20px;
-    color: #5c99ca;
+    color: #2397DF;
 }
 
 section .item {
