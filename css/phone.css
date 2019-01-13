@@ -23,8 +23,9 @@ a:hover {
 }
 
 body {
-    font: 14px/1.5 Arial;
-    color: #666;
+    color: #333;
+    font-family: "Palatino Linotype", "Book Antiqua", Palatino;
+    font-size: 1em;
     background: rgb(195, 188, 178);
 }
 

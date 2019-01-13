@@ -1,3 +1,7 @@
+body {
+    background: transparent;
+}
+
 .layout {
     width: 100vw;
 }
