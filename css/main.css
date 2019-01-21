@@ -22,6 +22,12 @@ a:hover {
     color: #333;
 }
 
+.highlight {
+    color: #FF5700;
+    border-radius: 5px;
+    background: #efefef;
+}
+
 body {
     color: #333;
     font-family: "Palatino Linotype", "Book Antiqua", Palatino;
@@ -42,8 +48,8 @@ header {
     background: rgb(64, 64, 65);
     width: 100%;
     text-align: center;
-    padding-top: 60px;
-    padding-bottom: 20px;
+    padding-top: 80px;
+    padding-bottom: 30px;
     position: relative;
 }
 
@@ -57,18 +63,8 @@ header>h1 {
 
 header>p {
     color: #999;
+    padding-top: 10px;
     font-size: 20px;
-}
-
-header a {
-    padding: 5px;
-    text-decoration: none;
-    color: #888;
-    font-size: 16px;
-}
-
-header a:hover {
-    color: #fff;
 }
 
 /* aside */
@@ -157,8 +153,16 @@ section .item {
     padding-left: 10px;
 }
 
-.experience {
-    margin: 0px -5px;
+.more .item {
+    display: flex;
+    align-items: center;
+    padding: 3px 0;
+    font-size: 16px;
+}
+
+.more .item .icon {
+    width: 32px;
+    height: 32px;
 }
 
 /* main */
@@ -178,22 +182,33 @@ main .line {
 }
 
 main section:last-of-type {
-    margin: 0px 50px 0px 30px;
-    padding-top: 25px;
-    padding-bottom: 30px;
+    margin: 30px 25px 30px 30px;
+}
+
+main .experience {
+    margin: 0px -5px;
+    padding-bottom: 20px;
 }
 
 main section p {
     padding-bottom: 3px;
 }
 
-main section .item {
+main section .item:not(:last-of-type) {
     padding-bottom: 20px;
 }
 
 main section .item h3 {
     color: #333;
     font-size: 16px;
+}
+
+main section .item img {
+    margin-top: 5px;
+    width: 100%;
+    border: 1px solid #ddd;
+    border-style: dashed;
+    border-radius: 5px;
 }
 
 main section .item ul {
