@@ -14,3 +14,7 @@ header .resume-link {
     top: 10px;
     display: block;
 }
+
+main .item img {
+    display: none;
+}
